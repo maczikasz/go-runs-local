@@ -1,0 +1,9 @@
+mongo:
+  url: "mongodb://mongo:27017"
+  database: "runs"
+
+markdown:
+  gridfs:
+    url: "mongodb://mongo:27017"
+    bucket: "runs"
+

@@ -1,0 +1,18 @@
+auth:
+  redirect: "http://localhost:80/oauth-callback"
+  client:
+    id: "go-runs"
+    secret: "a02cdd94-ce9f-4646-83cf-042fe8dadd31"
+  scopes:
+    - "openid"
+  endpoint:
+    auth: "http://localhost:9011/realms/go-runs/protocol/openid-connect/auth"
+    token: "http://auth:9011/realms/go-runs/protocol/openid-connect/token"
+    logout: "http://localhost:9011/realms/go-runs/protocol/openid-connect/logout"
+    userdata: "http://auth:9011/realms/go-runs/protocol/openid-connect/userinfo"
+    
+  # endpoint:
+  #   auth: "http://localhost:9011/oauth2/authorize"
+  #   token: "http://auth:9011/oauth2/token"
+  #   logout: "http://localhost:9011/oauth2/logout"
+  #   userdata: "http://auth:9011/oauth2/userinfo"
